@@ -1,4 +1,7 @@
+// Logos
 import logo from "../assets/images/logo.svg";
+import logo_footer from "../assets/images/logo-footer.svg";
+import logo_nesma from "../assets/images/nesmaLogo.svg";
 import bnr1 from "../assets/images/bnr_home1.webp";
 import bnr2 from "../assets/images/bnr_home2.webp";
 import bnr3 from "../assets/images/bnr_home3.webp";
@@ -62,6 +65,8 @@ import service6_3 from "../assets/images/6-img3.webp";
 
 export {
   logo,
+  logo_footer,
+  logo_nesma,
   bnr1,
   bnr2,
   bnr3,

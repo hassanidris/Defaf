@@ -1,54 +1,34 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
+import { logo_footer, logo_nesma } from "../constants/images";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
-      <Typography color="blue-gray" className="font-normal">
-        &copy; 2023 Material Tailwind
-      </Typography>
-      <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
-        <li>
+    <footer className="bg-[#4a90e2]">
+      <div className="flex flex-col md:flex-row  items-end gap-4 justify-between text-white-blue-900 mx-auto max-w-[1280px] px-3 py-6">
+        <div className=" flex justify-center items-end gap-4">
+          <img src={logo_footer} alt="logo" className=" h-12" />
           <Typography
-            as="a"
-            href="#"
-            color="blue-gray"
-            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+            as="p"
+            variant="small"
+            color="white"
+            className="font-bold text-white"
           >
-            About Us
+            Defaf Logistics. &copy; {new Date().getFullYear()}
           </Typography>
-        </li>
-        <li>
+        </div>
+        <div className=" flex justify-center items-center gap-4">
+          <img className="w-12 " src={logo_nesma} alt="" />
           <Typography
-            as="a"
-            href="#"
-            color="blue-gray"
-            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+            as="p"
+            variant="small"
+            color="white"
+            className="font-bold text-white"
           >
-            License
+            NESMA HOLDING GROUP
           </Typography>
-        </li>
-        <li>
-          <Typography
-            as="a"
-            href="#"
-            color="blue-gray"
-            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-          >
-            Contribute
-          </Typography>
-        </li>
-        <li>
-          <Typography
-            as="a"
-            href="#"
-            color="blue-gray"
-            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-          >
-            Contact Us
-          </Typography>
-        </li>
-      </ul>
+        </div>
+      </div>
     </footer>
   );
 };
