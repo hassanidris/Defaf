@@ -13,7 +13,7 @@ const Footer = () => {
             as="p"
             variant="small"
             color="white"
-            className="font-bold text-white"
+            className="font-bold font-cairo text-white"
           >
             {t("copyright1")} &copy; {new Date().getFullYear()}
           </Typography>
@@ -24,7 +24,7 @@ const Footer = () => {
             as="p"
             variant="small"
             color="white"
-            className="font-bold text-white"
+            className="font-bold font-cairo text-white"
           >
             {t("copyright2")}
           </Typography>

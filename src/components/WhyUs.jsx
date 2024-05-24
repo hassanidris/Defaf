@@ -13,38 +13,73 @@ const WhyUs = () => {
           <Typography
             variant="h2"
             color="black"
-            className="p-3 !font-bold !font-roboto"
+            className="p-3 !font-bold  font-cairo"
           >
             {t("why-title1")}
             <span className=" font-extralight"> {t("why-title2")}</span>
           </Typography>
           <ul className="list-outside">
-            <Typography as="li" variant="lead" color="black" className=" p-1">
+            <Typography
+              as="li"
+              variant="lead"
+              color="black"
+              className=" p-1 font-cairo"
+            >
               <FaCircle className="inline-block mx-2 text-[#0B72BC]" />
               {t("why-point1")}
             </Typography>
-            <Typography as="li" variant="lead" color="black" className=" p-1">
+            <Typography
+              as="li"
+              variant="lead"
+              color="black"
+              className=" p-1 font-cairo"
+            >
               <FaCircle className="inline-block mx-2 text-[#0B72BC]" />
               {t("why-point2")}
             </Typography>
-            <Typography as="li" variant="lead" color="black" className=" p-1">
+            <Typography
+              as="li"
+              variant="lead"
+              color="black"
+              className=" p-1 font-cairo"
+            >
               <FaCircle className="inline-block mx-2 text-[#0B72BC]" />
               {t("why-point3")}
             </Typography>
-            <Typography as="li" variant="lead" color="black" className=" p-1">
+            <Typography
+              as="li"
+              variant="lead"
+              color="black"
+              className=" p-1 font-cairo"
+            >
               <FaCircle className="inline-block mx-2 text-[#0B72BC]" />
               {t("why-point4")}
             </Typography>
 
-            <Typography as="li" variant="lead" color="black" className=" p-1">
+            <Typography
+              as="li"
+              variant="lead"
+              color="black"
+              className=" p-1 font-cairo"
+            >
               <FaCircle className="inline-block mx-2 text-[#0B72BC]" />
               {t("why-point5")}
             </Typography>
-            <Typography as="li" variant="lead" color="black" className=" p-1">
+            <Typography
+              as="li"
+              variant="lead"
+              color="black"
+              className=" p-1 font-cairo"
+            >
               <FaCircle className="inline-block mx-2 text-[#0B72BC]" />
               {t("why-point6")}
             </Typography>
-            <Typography as="li" variant="lead" color="black" className=" p-1">
+            <Typography
+              as="li"
+              variant="lead"
+              color="black"
+              className=" p-1 font-cairo"
+            >
               <FaCircle className="inline-block mx-2 text-[#0B72BC]" />
               {t("why-point7")}
             </Typography>

@@ -48,12 +48,12 @@ const Services = () => {
           <Typography
             variant="h2"
             color="black"
-            className="!font-bold font-roboto"
+            className="!font-bold  font-cairo"
           >
             <span className=" font-extralight">{t("services-title1")}</span>{" "}
             {t("services-title2")}
           </Typography>
-          <Typography as="p" variant="lead" className=" my-5">
+          <Typography as="p" variant="lead" className=" my-5 font-cairo">
             {t("services-desc")}
           </Typography>
         </div>
@@ -64,14 +64,14 @@ const Services = () => {
         >
           <AccordionHeader
             onClick={() => handleOpen(1)}
-            className={`border-b-0 transition-colors ${
+            className={`border-b-0 font-cairo transition-colors ${
               open === 1 ? "text-blue-500 !font-bold hover:!text-blue-700 " : ""
             }`}
           >
             {t("acco1-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
-            <Typography as="p" variant="paragraph">
+            <Typography as="p" variant="paragraph" className=" font-cairo">
               {t("acco1-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
@@ -94,14 +94,14 @@ const Services = () => {
         >
           <AccordionHeader
             onClick={() => handleOpen(2)}
-            className={`border-b-0 transition-colors ${
+            className={`border-b-0 font-cairo transition-colors ${
               open === 2 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
             {t("acco2-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
-            <Typography as="p" variant="paragraph">
+            <Typography as="p" variant="paragraph" className=" font-cairo">
               {t("acco2-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
@@ -124,14 +124,14 @@ const Services = () => {
         >
           <AccordionHeader
             onClick={() => handleOpen(3)}
-            className={`border-b-0 transition-colors ${
+            className={`border-b-0 font-cairo transition-colors ${
               open === 3 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
             {t("acco3-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
-            <Typography as="p" variant="paragraph">
+            <Typography as="p" variant="paragraph" className=" font-cairo">
               {t("acco3-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
@@ -155,14 +155,14 @@ const Services = () => {
         >
           <AccordionHeader
             onClick={() => handleOpen(4)}
-            className={`border-b-0 transition-colors ${
+            className={`border-b-0 font-cairo transition-colors ${
               open === 4 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
             {t("acco4-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
-            <Typography as="p" variant="paragraph">
+            <Typography as="p" variant="paragraph" className=" font-cairo">
               {t("acco4-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
@@ -185,14 +185,14 @@ const Services = () => {
         >
           <AccordionHeader
             onClick={() => handleOpen(5)}
-            className={`border-b-0 transition-colors ${
+            className={`border-b-0 font-cairo transition-colors ${
               open === 5 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
             {t("acco5-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
-            <Typography as="p" variant="paragraph">
+            <Typography as="p" variant="paragraph" className=" font-cairo">
               {t("acco5-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
@@ -216,14 +216,14 @@ const Services = () => {
         >
           <AccordionHeader
             onClick={() => handleOpen(6)}
-            className={`border-b-0 transition-colors ${
+            className={`border-b-0 font-cairo transition-colors ${
               open === 6 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
             {t("acco6-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
-            <Typography as="p" variant="paragraph">
+            <Typography as="p" variant="paragraph" className=" font-cairo">
               {t("acco6-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">

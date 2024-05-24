@@ -6,6 +6,7 @@ module.exports = withMT({
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
+      cairo: ["cairo", "sans-serif"],
     },
     extend: {},
   },

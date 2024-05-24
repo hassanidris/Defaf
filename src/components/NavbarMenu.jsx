@@ -31,7 +31,7 @@ const NavbarMenu = () => {
         as="li"
         variant="large"
         color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
       >
         <Link
           to="whyus"
@@ -48,7 +48,7 @@ const NavbarMenu = () => {
         as="li"
         variant="large"
         color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
       >
         <Link
           to="services"
@@ -64,7 +64,7 @@ const NavbarMenu = () => {
         as="li"
         variant="large"
         color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
       >
         <Link
           to="about-us"
@@ -80,7 +80,7 @@ const NavbarMenu = () => {
         as="li"
         variant="large"
         color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
       >
         <a
           href="https://careers.nesma.com/en/"
@@ -94,7 +94,7 @@ const NavbarMenu = () => {
         as="li"
         variant="large"
         color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
       >
         <Link
           to="clients"
@@ -110,7 +110,7 @@ const NavbarMenu = () => {
         as="li"
         variant="large"
         color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg  font-cairo"
       >
         <Link
           to="contact"

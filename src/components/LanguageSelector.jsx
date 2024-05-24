@@ -61,7 +61,7 @@ const LanguageSelector = ({ onLanguageChange }) => {
               <MenuItem key={lng.code}>
                 <a
                   href="#"
-                  className={` p-3 block ${
+                  className={` p-3 block font-cairo ${
                     lng.code === i18n.language ? " text-blue" : "text-black "
                   }`}
                   onClick={() => {

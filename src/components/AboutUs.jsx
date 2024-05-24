@@ -56,7 +56,7 @@ const AboutUs = () => {
           <TabsHeader className="bg-white rounded-lg overflow-x-scroll">
             {data.map(({ label, value }) => (
               <Tab
-                className=" font-medium font-roboto text-lg text-[#0B72BC]"
+                className=" font-medium  font-cairo text-lg text-[#0B72BC]"
                 key={value}
                 value={value}
               >
@@ -83,7 +83,7 @@ const AboutUs = () => {
                     <Typography
                       as="h2"
                       variant="large"
-                      className=" text-4xl mb-2 font-roboto"
+                      className=" text-4xl mb-2  font-cairo"
                     >
                       <h2 className="text-4xl">
                         {title1_1}
@@ -98,10 +98,18 @@ const AboutUs = () => {
                       className=" float-right w-72 ml-3 mb-3"
                       alt=""
                     />
-                    <Typography as="p" variant="lead" className=" mt-5">
+                    <Typography
+                      as="p"
+                      variant="lead"
+                      className=" mt-5 font-cairo"
+                    >
                       {desc1_1}
                     </Typography>
-                    <Typography as="p" variant="lead" className=" mt-5">
+                    <Typography
+                      as="p"
+                      variant="lead"
+                      className=" mt-5 font-cairo"
+                    >
                       {desc1_2}
                     </Typography>
                   </div>
@@ -109,7 +117,7 @@ const AboutUs = () => {
                     <Typography
                       as="h2"
                       variant="large"
-                      className=" text-4xl mb-2 font-roboto"
+                      className=" text-4xl mb-2  font-cairo"
                     >
                       <h2 className="text-4xl">
                         {title2_1}
@@ -119,7 +127,11 @@ const AboutUs = () => {
                         </span>
                       </h2>
                     </Typography>
-                    <Typography as="p" variant="lead" className=" mt-5">
+                    <Typography
+                      as="p"
+                      variant="lead"
+                      className=" mt-5 font-cairo"
+                    >
                       {desc2_1}
                     </Typography>
                     <Typography as="p" variant="lead" className=" mt-5">

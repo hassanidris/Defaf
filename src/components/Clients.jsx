@@ -70,7 +70,7 @@ const Clients = () => {
         <Typography
           variant="h2"
           color="black"
-          className="p-3 !font-bold font-roboto"
+          className="p-3 !font-bold  font-cairo"
         >
           <span className=" font-extralight">{t("clients-title1")}</span>{" "}
           {t("clients-title2")}

@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 const Hero = () => {
   const { t } = useTranslation();
   return (
-    <div className=" relative h-[80vh]">
+    <div className=" relative h-[80vh] font-cairo">
       <Swiper
         // spaceBetween={10}
         centeredSlides={true}
@@ -39,11 +39,15 @@ const Hero = () => {
                 <Typography
                   variant="h1"
                   color="white"
-                  className="mb-4 text-2xl md:text-3xl lg:text-4xl bg-[#4a90e2] p-3"
+                  className="mb-4 text-2xl md:text-3xl lg:text-4xl bg-[#4a90e2] p-3 font-cairo !font-bold"
                 >
                   {t("hero-msg-title1")}
                 </Typography>
-                <Typography variant="lead" color="white" className="mb-12 p-3">
+                <Typography
+                  variant="lead"
+                  color="white"
+                  className="mb-12 p-3 font-cairo"
+                >
                   {t("hero-msg-desc1")}
                 </Typography>
               </div>
@@ -62,11 +66,15 @@ const Hero = () => {
                 <Typography
                   variant="h1"
                   color="white"
-                  className="mb-4 text-2xl md:text-3xl lg:text-4xl bg-[#4a90e2] p-3"
+                  className="mb-4 text-2xl md:text-3xl lg:text-4xl bg-[#4a90e2] p-3 font-cairo !font-bold"
                 >
                   {t("hero-msg-title2")}
                 </Typography>
-                <Typography variant="lead" color="white" className="mb-12 p-3">
+                <Typography
+                  variant="lead"
+                  color="white"
+                  className="mb-12 p-3 font-cairo"
+                >
                   {t("hero-msg-desc2")}
                 </Typography>
               </div>
@@ -85,11 +93,15 @@ const Hero = () => {
                 <Typography
                   variant="h1"
                   color="white"
-                  className="mb-4 text-2xl md:text-3xl lg:text-4xl bg-[#4a90e2] p-3"
+                  className="mb-4 text-2xl md:text-3xl lg:text-4xl bg-[#4a90e2] p-3 font-cairo !font-bold"
                 >
                   {t("hero-msg-title3")}
                 </Typography>
-                <Typography variant="lead" color="white" className="mb-12 p-3">
+                <Typography
+                  variant="lead"
+                  color="white"
+                  className="mb-12 p-3 font-cairo"
+                >
                   {t("hero-msg-desc3")}
                 </Typography>
               </div>

@@ -11,17 +11,17 @@ const Contact = () => {
           <Typography
             variant="h2"
             color="black"
-            className="!font-bold font-roboto mb-8"
+            className="!font-bold  font-cairo mb-8"
           >
             {t("contact-title")}
           </Typography>
-          <Typography as="p" variant="lead">
+          <Typography as="p" variant="lead" className=" font-cairo">
             {t("contact-address1")}
           </Typography>
-          <Typography as="p" variant="lead" className=" mb-5">
+          <Typography as="p" variant="lead" className=" mb-5 font-cairo">
             {t("contact-address2")}
           </Typography>
-          <Typography as="p" variant="lead">
+          <Typography as="p" variant="lead" className=" font-cairo">
             {t("contact-address3")}
           </Typography>
         </div>
