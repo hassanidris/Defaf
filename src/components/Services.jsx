@@ -13,6 +13,7 @@ import {
   serv_stuffing,
   serv_transportation,
 } from "../constants/data";
+import { useTranslation } from "react-i18next";
 
 function Icon({ id, open }) {
   return (
@@ -36,6 +37,7 @@ function Icon({ id, open }) {
 }
 
 const Services = () => {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(1);
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
@@ -48,15 +50,11 @@ const Services = () => {
             color="black"
             className="!font-bold font-roboto"
           >
-            <span className=" font-extralight">OUR</span> SERVICES
+            <span className=" font-extralight">{t("services-title1")}</span>{" "}
+            {t("services-title2")}
           </Typography>
           <Typography as="p" variant="lead" className=" my-5">
-            Defaf Logistics is dedicated to providing highly-optimized
-            integrated and ﬂexible logistics solutions to all size of customers
-            in Saudi Arabia. Through an understanding of the unique business
-            needs of each customer, an appropriate and logical solution is
-            developed. Supported by highly qualified and trained professionals,
-            Defaf Logistics services include:
+            {t("services-desc")}
           </Typography>
         </div>
         <Accordion
@@ -70,22 +68,11 @@ const Services = () => {
               open === 1 ? "text-blue-500 !font-bold hover:!text-blue-700 " : ""
             }`}
           >
-            Container Storage
+            {t("acco1-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
             <Typography as="p" variant="paragraph">
-              Defaf Logistics specializes in the exclusive, management, storage
-              and servicing of containers and bulk cargo. Defaf terminals have
-              the latest container – handling Equipment, and a skilled container
-              service team that is properly trained and qualified to cater to
-              different requirements and needs of customers and shipping lines.
-              All cargo is stored in easily identifiable zones, and maintained
-              to FIFO requirements. Defaf terminals are very near to sea ports
-              and have state - of - the - art IT which capable of providing
-              required EDI messages and reports to shipping lines/customers to
-              streamline operations and tracking. Defaf has many trusting
-              costumers that give us the motivation to continuously improve our
-              performance and invest in our team and operation capacity.
+              {t("acco1-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
               {serv_container.map(({ img }, index) => (
@@ -111,15 +98,11 @@ const Services = () => {
               open === 2 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
-            Reefer Plug
+            {t("acco2-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
             <Typography as="p" variant="paragraph">
-              Defaf terminals have more than 576 reefer plug points supported by
-              powerful and efficient generators to ensure uninterrupted power
-              supply to maintain the required temperatures. Correct temperatures
-              are maintained at all times by using requisite and specialized
-              equipment .
+              {t("acco2-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
               {serv_reefer_plug.map(({ img }, index) => (
@@ -145,19 +128,11 @@ const Services = () => {
               open === 3 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
-            Reefer Pre-Trip Inspection
+            {t("acco3-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
             <Typography as="p" variant="paragraph">
-              PTI is an inspection conducted on an empty reefer container before
-              release, to ensure the correct functioning of the cooling unit,
-              temperature control and recording devices. PTI also includes
-              checking the container for structural damage, and ensuring that
-              the inside of the container is clean and ready in all respect to
-              receive cargo. Defaf provide pre trip inspection and / or pre
-              cooling services for reefer containers. Handled by well trained,
-              skillfully man power and good communication skill will guarantee
-              the readiness and quality of reefer
+              {t("acco3-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
               {serv_reefer_pretrip.map(({ img }, index) => (
@@ -184,15 +159,11 @@ const Services = () => {
               open === 4 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
-            Transportation
+            {t("acco4-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
             <Typography as="p" variant="paragraph">
-              With our ﬂeet, we oﬀer diﬀerent transport services so we can
-              arrange the movement of containers and cargo anywhere within the
-              Saudi Arabia and GCC, such as: Refrigerated Cargo
-              Transport(Reefer/side curtain trailers), Dry Container Transport,
-              Reefer Container Transport, Diesel Supply & Water Supply.
+              {t("acco4-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
               {serv_transportation.map(({ img }, index) => (
@@ -218,17 +189,11 @@ const Services = () => {
               open === 5 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
-            Stuffing & Un-Stuffing
+            {t("acco5-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
             <Typography as="p" variant="paragraph">
-              Defaf Terminals handle cargo stuffing And stripping at our
-              terminals. Consolidation service typically involves the cargo
-              transportation to the stuffing point, stuffing of cargo in
-              container, custom process of shipping documents, and finally
-              re-packing if necessary for delivery. Defaf provides dedicated
-              area, equipment and manpower to support stuffing and stripping
-              operations based on customer demand.
+              {t("acco5-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
               {serv_stuffing.map(({ img }, index) => (
@@ -255,16 +220,11 @@ const Services = () => {
               open === 6 ? "text-blue-500 hover:!text-blue-700" : ""
             }`}
           >
-            Container Repair
+            {t("acco6-title")}
           </AccordionHeader>
           <AccordionBody className="pt-0 text-base font-normal">
             <Typography as="p" variant="paragraph">
-              From minor adjustments to major repairs, Defaf workshop team can
-              handle M&R needs. Our experienced staﬀ and professional mechanics
-              know how to properly repair your equipment to your exacting
-              requirements. We know the importance of having your equipment
-              available for its next booking. From inspection to repair , Defaf
-              delivers quality you can count on.
+              {t("acco6-desc")}
             </Typography>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-7">
               {serv_repair.map(({ img }, index) => (

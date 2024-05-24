@@ -1,0 +1,76 @@
+{
+  "nav1": "WHY US",
+  "nav2": "SERVICES",
+  "nav3": "ABOUT US",
+  "nav4": "CAREERS",
+  "nav5": "OUR CLIENTS",
+  "nav6": "CONTACT US",
+
+  "hero-msg-title1": "Innovative & efficient",
+  "hero-msg-desc1": "Defaf utilizes state-of-the-art logitics technology",
+  "hero-msg-title2": "Safe & Secure",
+  "hero-msg-desc2": "Defaf maintains gated access with 24/7 security surveillance",
+  "hero-msg-title3": "Professional",
+  "hero-msg-desc3": "Defaf focuses on every customer and takes professional approach",
+
+  "why-title1": "WHY",
+  "why-title2": "US",
+
+  "why-point1": "Integrated and Flexible Logistics Solutions.",
+  "why-point2": "Fleet for different transport services.",
+  "why-point3": "Different Branches inside KSA and GCC.",
+  "why-point4": "24/7 surveillance Terminals near to sea ports.",
+  "why-point5": "Largest Reefer container terminal outside sea ports in KSA.",
+  "why-point6": "Offices inside sea ports.",
+  "why-point7": "1,200 M² fully equipped workshop.",
+
+  "about-tab": "About Us",
+  "about-title1": "ABOUT",
+  "about-title2": "US",
+  "about-desc1": "Defaf United for Logistics Company is a part of Nesma Holding Group. Defaf Logistics was founded in 2016 with total investment in business more than 60 million SR to be Saudi Arabia’s leading logistics service provider. The company was established with a commitment to provide the highest quality professional services, which meet the expectations of our customers offering unparalleled access to Saudi Arabia’s industrial and consumer markets.",
+  "about-desc2": "Defaf United for Logistics advances innovation and efficiency in logistics services by offering integrated and flexible solutions for cargo vessels and shippers of all sizes. The company has become the fastest growing company in Saudi Arabia in this field and has gained a distinctive reputation for providing solutions for difficult logistics.",
+
+  "mission-tab": "Mission & Vision",
+  "vision-title1": "OUR",
+  "vision-title2": "VISION",
+  "vision-desc": "To advance innovation and efficiency in logistics services.",
+  "mission-title1": "OUR",
+  "mission-title2": "MISSION",
+  "mission-desc": "Defaf is dedicated to providing highly-optimized logistics services in the Middle East.",
+
+  "quality-tab": "Quality Policy / Cargo Insurance",
+  "quality-title1": "QUALITY",
+  "quality-title2": "POLICY",
+  "quality-desc": "Defaf believes that Quality is not an option, but a necessity to survive and thrive in an environment of global competition. We aim to provide total customer satisfaction that will lead to customer loyalty. Our commitment to provide safe services. Quality is not just another goal. it is our basic strategy for future growth and development of our human capital.",
+  "cargo-title1": "CARGO",
+  "cargo-title2": "INSURANCE",
+  "cargo-desc": "Defaf is dedicated to providing highly-optimized logistics services in the Middle East.",
+
+  "services-title1": "OUR",
+  "services-title2": "SERVICES",
+  "services-desc": "Defaf Logistics is dedicated to providing highly-optimized integrated and ﬂexible logistics solutions to all size of customers in Saudi Arabia. Through an understanding of the unique business needs of each customer, an appropriate and logical solution is developed. Supported by highly qualified and trained professionals, Defaf Logistics services include:",
+
+  "acco1-title": "Container Storage",
+  "acco1-desc": "Defaf Logistics specializes in the exclusive, management, storage and servicing of containers and bulk cargo. Defaf terminals have the latest container – handling Equipment, and a skilled container service team that is properly trained and qualified to cater to different requirements and needs of customers and shipping lines. All cargo is stored in easily identifiable zones, and maintained to FIFO requirements. Defaf terminals are very near to sea ports and have state - of - the - art IT which capable of providing required EDI messages and reports to shipping lines/customers to streamline operations and tracking. Defaf has many trusting costumers that give us the motivation to continuously improve our performance and invest in our team and operation capacity.",
+  "acco2-title": "Reefer Plug",
+  "acco2-desc": "Defaf terminals have more than 576 reefer plug points supported by powerful and efficient generators to ensure uninterrupted power supply to maintain the required temperatures. Correct temperatures are maintained at all times by using requisite and specialized equipment .",
+  "acco3-title": "Reefer Pre-Trip Inspection",
+  "acco3-desc": "PTI is an inspection conducted on an empty reefer container before release, to ensure the correct functioning of the cooling unit, temperature control and recording devices. PTI also includes checking the container for structural damage, and ensuring that the inside of the container is clean and ready in all respect to receive cargo. Defaf provide pre trip inspection and / or pre cooling services for reefer containers. Handled by well trained, skillfully man power and good communication skill will guarantee the readiness and quality of reefer",
+  "acco4-title": "Transportation",
+  "acco4-desc": "With our ﬂeet, we oﬀer diﬀerent transport services so we can arrange the movement of containers and cargo anywhere within the Saudi Arabia and GCC, such as: Refrigerated Cargo Transport(Reefer/side curtain trailers), Dry Container Transport, Reefer Container Transport, Diesel Supply & Water Supply.",
+  "acco5-title": "Stuffing & Un-Stuffing",
+  "acco5-desc": "Defaf Terminals handle cargo stuffing And stripping at our terminals. Consolidation service typically involves the cargo transportation to the stuffing point, stuffing of cargo in container, custom process of shipping documents, and finally re-packing if necessary for delivery. Defaf provides dedicated area, equipment and manpower to support stuffing and stripping operations based on customer demand.",
+  "acco6-title": "Container Repair",
+  "acco6-desc": "From minor adjustments to major repairs, Defaf workshop team can handle M&R needs. Our experienced staﬀ and professional mechanics know how to properly repair your equipment to your exacting requirements. We know the importance of having your equipment available for its next booking. From inspection to repair , Defaf delivers quality you can count on.",
+
+  "clients-title1": "OUR",
+  "clients-title2": "CLIENTS",
+
+  "contact-title": "HEAD OFFICE IN JEDDAH",
+  "contact-address1": "Saba Building, Prince Sultan Rd.",
+  "contact-address2": "Al Salama District, Jeddah 23525",
+  "contact-address3": "Phone: +966 12 236 7111",
+
+  "copyright1": "Defaf Logistics.",
+  "copyright2": "NESMA HOLDING GROUP"
+}

@@ -18,8 +18,10 @@ import {
   clnLogo9,
 } from "../constants/images";
 import { Typography } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 
 const Clients = () => {
+  const { t } = useTranslation();
   let sliderRef = useRef(null);
   //   const play = () => {
   //     sliderRef.slickPlay();
@@ -70,7 +72,8 @@ const Clients = () => {
           color="black"
           className="p-3 !font-bold font-roboto"
         >
-          <span className=" font-extralight">OUR</span> CLIENTS
+          <span className=" font-extralight">{t("clients-title1")}</span>{" "}
+          {t("clients-title2")}
         </Typography>
         <div className="slider-container">
           <Slider ref={(slider) => (sliderRef = slider)} {...settings}>

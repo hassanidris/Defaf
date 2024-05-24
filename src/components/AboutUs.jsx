@@ -8,37 +8,39 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { aboutBG, aboutImg } from "../constants/images";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   const data = [
     {
-      label: "About Us",
+      label: t("about-tab"),
       value: "about",
-      title1_1: "ABOUT",
-      title1_2: "US",
-      desc1_1: `Defaf United for Logistics Company is a part of Nesma Holding Group. Defaf Logistics was founded in 2016 with total investment in business more than 60 million SR to be Saudi Arabia’s leading logistics service provider. The company was established with a commitment to provide the highest quality professional services, which meet the expectations of our customers offering unparalleled access to Saudi Arabia’s industrial and consumer markets.`,
-      desc1_2: `Defaf United for Logistics advances innovation and efficiency in logistics services by offering integrated and flexible solutions for cargo vessels and shippers of all sizes. The company has become the fastest growing company in Saudi Arabia in this field and has gained a distinctive reputation for providing solutions for difficult logistics.`,
+      title1_1: t("about-title1"),
+      title1_2: t("about-title2"),
+      desc1_1: t("about-desc1"),
+      desc1_2: t("about-desc2"),
       img1: aboutImg,
     },
     {
-      label: "Mission & Vision",
+      label: t("mission-tab"),
       value: "mission",
-      title1_1: "OUR",
-      title1_2: "VISION",
-      desc1_1: `To advance innovation and efficiency in logistics services.`,
-      title2_1: "OUR",
-      title2_2: "MISSION",
-      desc2_1: `Defaf is dedicated to providing highly-optimized logistics services in the Middle East.`,
+      title1_1: t("vision-title1"),
+      title1_2: t("vision-title2"),
+      desc1_1: t("vision-desc"),
+      title2_1: t("mission-title1"),
+      title2_2: t("mission-title2"),
+      desc2_1: t("mission-desc"),
     },
     {
-      label: "Quality Policy / Cargo Insurance",
+      label: t("quality-tab"),
       value: "quality",
-      title1_1: "QUALITY",
-      title1_2: "POLICY",
-      desc1_1: `Defaf believes that Quality is not an option, but a necessity to survive and thrive in an environment of global competition. We aim to provide total customer satisfaction that will lead to customer loyalty. Our commitment to provide safe services. Quality is not just another goal. it is our basic strategy for future growth and development of our human capital.`,
-      title2_1: "CARGO",
-      title2_2: "INSURANCE",
-      desc2_1: `Defaf is dedicated to providing highly-optimized logistics services in the Middle East.`,
+      title1_1: t("quality-title1"),
+      title1_2: t("quality-title2"),
+      desc1_1: t("quality-desc"),
+      title2_1: t("cargo-title1"),
+      title2_2: t("cargo-title2"),
+      desc2_1: t("cargo-desc"),
     },
   ];
   return (

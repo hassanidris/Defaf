@@ -1,9 +1,11 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
-    <section>
+    <section id="contact">
       <div className="flex flex-col md:flex-row  items-start gap-4 justify-between text-white-blue-900 mx-auto max-w-[1280px] px-3 py-14">
         <div className=" flex-1">
           <Typography
@@ -11,16 +13,16 @@ const Contact = () => {
             color="black"
             className="!font-bold font-roboto mb-8"
           >
-            HEAD OFFICE IN JEDDAH
+            {t("contact-title")}
           </Typography>
           <Typography as="p" variant="lead">
-            Saba Building, Prince Sultan Rd.
+            {t("contact-address1")}
           </Typography>
           <Typography as="p" variant="lead" className=" mb-5">
-            Al Salama District, Jeddah 23525
+            {t("contact-address2")}
           </Typography>
           <Typography as="p" variant="lead">
-            Phone: +966 12 236 7111
+            {t("contact-address3")}
           </Typography>
         </div>
         <div className=" flex-1">

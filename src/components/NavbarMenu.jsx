@@ -3,13 +3,15 @@ import {
   Navbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
 import { logo } from "../constants/images";
+import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 const NavbarMenu = () => {
+  const { t } = useTranslation();
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -19,6 +21,10 @@ const NavbarMenu = () => {
     );
   }, []);
 
+  const handleLanguageChange = () => {
+    setOpenNav(false);
+  };
+
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
@@ -27,9 +33,16 @@ const NavbarMenu = () => {
         color="white"
         className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
       >
-        <a href="#whyus" className="flex items-center">
-          WHY US
-        </a>
+        <Link
+          to="whyus"
+          offset={-120}
+          smooth={true}
+          className=" cursor-pointer"
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {t("nav1")}
+          {/* WHY US */}
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -37,9 +50,15 @@ const NavbarMenu = () => {
         color="white"
         className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
       >
-        <a href="#services" className="flex items-center">
-          SERVICES
-        </a>
+        <Link
+          to="services"
+          offset={-120}
+          smooth={true}
+          className=" cursor-pointer"
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {t("nav2")}
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -47,9 +66,15 @@ const NavbarMenu = () => {
         color="white"
         className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
       >
-        <a href="#about-us" className="flex items-center">
-          ABOUT US
-        </a>
+        <Link
+          to="about-us"
+          offset={-120}
+          smooth={true}
+          className=" cursor-pointer"
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {t("nav3")}
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -62,7 +87,7 @@ const NavbarMenu = () => {
           className="flex items-center"
           target="_blank"
         >
-          CAREERS
+          {t("nav4")}
         </a>
       </Typography>
       <Typography
@@ -71,9 +96,15 @@ const NavbarMenu = () => {
         color="white"
         className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
       >
-        <a href="#clients" className="flex items-center">
-          OUR CLIENTS
-        </a>
+        <Link
+          to="clients"
+          offset={-120}
+          smooth={true}
+          className=" cursor-pointer"
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {t("nav5")}
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -81,10 +112,17 @@ const NavbarMenu = () => {
         color="white"
         className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg"
       >
-        <a href="#" className="flex items-center">
-          CONTACT US
-        </a>
+        <Link
+          to="contact"
+          offset={-120}
+          smooth={true}
+          className=" cursor-pointer"
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {t("nav6")}
+        </Link>
       </Typography>
+      <LanguageSelector onLanguageChange={handleLanguageChange} />
     </ul>
   );
 
@@ -155,33 +193,6 @@ const NavbarMenu = () => {
           </div> */}
         </MobileNav>
       </Navbar>
-      {/* <div className="mx-auto max-w-screen-md py-12">
-        <Card className="mb-12 overflow-hidden">
-          <img
-            alt="nature"
-            className="h-[32rem] w-full object-cover object-center"
-            src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
-          />
-        </Card>
-        <Typography variant="h2" color="blue-gray" className="mb-2">
-          What is Material Tailwind
-        </Typography>
-        <Typography color="gray" className="font-normal">
-          Can you help me out? you will get a lot of free exposure doing this
-          can my website be in english?. There is too much white space do less
-          with more, so that will be a conversation piece can you rework to make
-          the pizza look more delicious other agencies charge much lesser can
-          you make the blue bluer?. I think we need to start from scratch can my
-          website be in english?, yet make it sexy i&apos;ll pay you in a week
-          we don&apos;t need to pay upfront i hope you understand can you make
-          it stand out more?. Make the font bigger can you help me out? you will
-          get a lot of free exposure doing this that&apos;s going to be a chunk
-          of change other agencies charge much lesser. Are you busy this
-          weekend? I have a new project with a tight deadline that&apos;s going
-          to be a chunk of change. There are more projects lined up charge extra
-          the next time.
-        </Typography>
-      </div> */}
     </div>
   );
 };
