@@ -15,14 +15,27 @@ const NavbarMenu = () => {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
+    const handleResize = () => {
+      if (window.innerWidth >= 960) {
+        setOpenNav(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const handleLanguageChange = () => {
     setOpenNav(false);
+  };
+
+  const handleNavLinkClick = () => {
+    if (window.innerWidth < 960) {
+      setOpenNav(!openNav);
+    }
   };
 
   const navList = (
@@ -37,27 +50,10 @@ const NavbarMenu = () => {
           to="whyus"
           offset={-120}
           smooth={true}
-          className=" cursor-pointer"
-          onClick={() => setOpenNav(!openNav)}
+          className="cursor-pointer"
+          onClick={handleNavLinkClick}
         >
           {t("nav1")}
-          {/* WHY US */}
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
-      >
-        <Link
-          to="services"
-          offset={-120}
-          smooth={true}
-          className=" cursor-pointer"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {t("nav2")}
         </Link>
       </Typography>
       <Typography
@@ -70,10 +66,26 @@ const NavbarMenu = () => {
           to="about-us"
           offset={-120}
           smooth={true}
-          className=" cursor-pointer"
-          onClick={() => setOpenNav(!openNav)}
+          className="cursor-pointer"
+          onClick={handleNavLinkClick}
         >
           {t("nav3")}
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="large"
+        color="white"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
+      >
+        <Link
+          to="services"
+          offset={-120}
+          smooth={true}
+          className="cursor-pointer"
+          onClick={handleNavLinkClick}
+        >
+          {t("nav2")}
         </Link>
       </Typography>
       <Typography
@@ -100,8 +112,8 @@ const NavbarMenu = () => {
           to="clients"
           offset={-120}
           smooth={true}
-          className=" cursor-pointer"
-          onClick={() => setOpenNav(!openNav)}
+          className="cursor-pointer"
+          onClick={handleNavLinkClick}
         >
           {t("nav5")}
         </Link>
@@ -110,14 +122,14 @@ const NavbarMenu = () => {
         as="li"
         variant="large"
         color="white"
-        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg  font-cairo"
+        className="p-3 font-bold hover:bg-[#0B72BC] hover:rounded-lg font-cairo"
       >
         <Link
           to="contact"
           offset={-120}
           smooth={true}
-          className=" cursor-pointer"
-          onClick={() => setOpenNav(!openNav)}
+          className="cursor-pointer"
+          onClick={handleNavLinkClick}
         >
           {t("nav6")}
         </Link>
@@ -127,17 +139,25 @@ const NavbarMenu = () => {
   );
 
   return (
-    <div className=" w-screen max-h-screen flex justify-center overflow-scroll !bg-black/90 fixed z-30">
-      <Navbar className=" !backdrop-filter-none !w-full  !bg-opacity-60  top-0 z-10 h-max   rounded-none py-2 !px-0 !lg:px-0 lg:py-1  !border-none !shadow-none bg-transparent">
+    <div className="w-screen max-h-screen flex justify-center overflow-scroll !bg-black/90 fixed z-30">
+      <Navbar className="!backdrop-filter-none !w-full !bg-opacity-60 top-0 z-10 h-max rounded-none py-2 !px-0 !lg:px-0 lg:py-1 !border-none !shadow-none bg-transparent">
         <div className="flex items-center justify-between text-white-blue-900 mx-auto max-w-[1440px] px-3">
           <Typography
             as="a"
             href="#"
-            className=" cursor-pointer py-1.5 font-medium"
+            className="cursor-pointer py-1.5 font-medium"
           >
-            <div className=" h-[100px]">
-              <img className=" w-full h-full" src={logo} alt="logo" />
-            </div>
+            <Link
+              to="home"
+              offset={-120}
+              smooth={true}
+              className="cursor-pointer "
+              onClick={handleNavLinkClick}
+            >
+              <div className="h-[100px]">
+                <img className="w-full h-full" src={logo} alt="logo" />
+              </div>
+            </Link>
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
@@ -181,17 +201,7 @@ const NavbarMenu = () => {
           </div>
         </div>
 
-        <MobileNav open={openNav}>
-          {navList}
-          {/* <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
-            </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
-            </Button>
-          </div> */}
-        </MobileNav>
+        <MobileNav open={openNav}>{navList}</MobileNav>
       </Navbar>
     </div>
   );

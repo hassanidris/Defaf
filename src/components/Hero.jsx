@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 const Hero = () => {
   const { t } = useTranslation();
   return (
-    <div className=" relative h-[80vh] font-cairo">
+    <div id="home" className=" relative h-[80vh] font-cairo">
       <Swiper
         // spaceBetween={10}
         centeredSlides={true}
