@@ -9,7 +9,7 @@ const WhyUs = () => {
   return (
     <section id="whyus">
       <div className="flex flex-col md:flex-row  items-start gap-4 justify-between text-white-blue-900 mx-auto max-w-[1280px] px-3 py-14">
-        <div>
+        <div className=" flex-1">
           <Typography
             variant="h2"
             color="black"
@@ -85,7 +85,7 @@ const WhyUs = () => {
             </Typography>
           </ul>
         </div>
-        <div>
+        <div className=" flex-1">
           <img
             className="h-96 w-full rounded-lg object-cover object-center"
             src={bnr3}
